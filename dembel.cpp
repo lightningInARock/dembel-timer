@@ -163,6 +163,8 @@ int main (int argc, char* argv[])
     if(passed >= 100) {
         passed = 100;
         std::cout << "] " << passed << '%' << "\n\nCongratulations, you have successfully finished army servcie" << std::endl;
+    } else if (passed < 0) {
+        std::cout << "] You didn't start serving yet" << std::endl;   
     } else {
         std::cout << "] " << passed << '%' << std::endl;
     }
